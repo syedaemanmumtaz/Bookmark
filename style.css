@@ -165,7 +165,7 @@ br{
 .text{
     width: 500px;
     margin: auto;
-    z-index: 1;
+    z-index: 3;
 }
 h3{
     font-size: 40px;
@@ -283,7 +283,6 @@ input::placeholder{
 }
 .joined{
     width: 100%;
-    height: 300px;
     background-color: #5267df;
 }
 .join{
@@ -320,7 +319,7 @@ input::placeholder{
 .fa-bars{
     display: none;
 }
-@media screen and (max-width:769px) and (min-width:0px) {
+@media screen and (max-width:480px) and (min-width:0px) {
     .none{
         display: none;
     }
@@ -346,7 +345,7 @@ input::placeholder{
         display: none;
     }
     .section1{
-        flex-wrap: wrap;
+        flex-direction: column-reverse;
     }
     .text{
         margin: 35px;
@@ -364,10 +363,79 @@ input::placeholder{
     .features{
         margin-top: 0;
     }
+
+    .container{
+        justify-content: space-between;
+        padding: 25px;
+    }
+    img{
+        width:100%;
+    }
+    .border>img{
+        width: auto;
+    }
+    .hero>img{
+        margin-left: 55px;
+    }
 }
 
-@media screen and(max-width:1024px)and (min-width:769px) {
+@media screen and (min-width:481px) and (max-width:769px){
     body{
         overflow-x: hidden;
     }
+    .fa-bars{
+        display: none;
+    }
+    .absolute{
+        display: none;
+    }
+    .absolute1{
+        display: none;
+    }
+    .flex{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 35px;
+    }
+    img{
+        width: 100%;
+    }
+    .hero>img{
+        margin-left: 55px;
+    }
+    .absolute-1{
+        display: none;
+    }
+    .hidden{
+        display: none;
+    }
+    .section1{
+        flex-direction: column-reverse;
+    }
+    .text{
+        margin: 35px;
+    }
+    br{
+        display: block;
+    }
+    .sect-cont{
+        text-align: center;
+    }
+    .feat{
+        margin-left: 0;
+    }
+
+    .features{
+        margin-top: 0;
+    }
+
+    .container{
+        justify-content: space-between;
+        padding: 25px;
+    }
+    .border>img{
+        width: auto;
+    }
 }
+
